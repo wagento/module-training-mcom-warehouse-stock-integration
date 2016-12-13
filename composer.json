@@ -1,0 +1,14 @@
+{
+    "name": "training/module-mcom-warehouse-stock-integration",
+    "description": "Training - Warehouse Stock Integration with MCOM",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Training\\McomWarehouseStockIntegration\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

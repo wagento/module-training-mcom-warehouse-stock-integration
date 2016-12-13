@@ -1,0 +1,20 @@
+<div>
+    <form id="source_stock" method="post" action="<?=$this->getUrl('sourcestock/update/index')?>">
+        <label for="source">Source</label>
+        <select id="source" name="source">
+            <?php
+            for($i=1;$i<=42;$i++) {
+            ?>
+                <option value="Store_<?=$i?>">Store <?=$i?></option>
+            <?php
+            }
+            ?>
+        </select>
+        <label for="sku">SKU</label>
+        <input id="sku" name="sku" type="text"/>
+        <label for="quantity">Quantity</label>
+        <input id="quantity" name="quantity"/>
+        <input type="submit"/>
+    </form>
+</div>
+</style>

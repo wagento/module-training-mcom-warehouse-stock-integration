@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Update Source Stock</title>
+    </head>
+    <body>
+        <referenceBlock name="menu">
+            <action method="setActive">
+                <argument name="itemId" xsi:type="string">Training_McomWarehouseStockIntegration::update_source_stock</argument>
+            </action>
+        </referenceBlock>
+        <referenceContainer name="content">
+            <block  name="update_source_stock"
+                    class="Training\McomWarehouseStockIntegration\Block\Adminhtml\SourceStock\Update"
+                    template="Training_McomWarehouseStockIntegration::sourcestock/update.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
