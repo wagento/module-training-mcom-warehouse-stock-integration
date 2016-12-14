@@ -1,0 +1,22 @@
+<div>
+    <form id="source_stock" method="post" action="<?=$this->getUrl('sourcestock/show/index')?>">
+        <label for="sku">SKU</label>
+        <input id="sku" name="sku" type="text"/>
+        <input type="submit"/>
+    </form>
+</div>
+<hr/>
+<div>
+    <h2>Result</h2>
+    <div>
+        <?php
+        $sourcestocks = $this->getSourceStocks();
+        if (!empty($sourcestocks)) {
+            foreach ($this->getSourceStocks() as $sourcestock) { ?>
+                <?= $sourcestock['source_id'] ?>: <?= $sourcestock['quantity'] ?><br/>
+        <?php   }
+        } else { ?>
+            No results found
+        <?php } ?>
+    </div>
+</div>
