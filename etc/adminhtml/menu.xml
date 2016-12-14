@@ -13,5 +13,13 @@
          sortOrder="100"
          resource="Magento_Backend::content"
          action="sourcestock/update" />
+
+    <add id="Training_McomWarehouseStockIntegration::show_source_stock"
+         title="List Source Stock"
+         module="Training_McomWarehouseStockIntegration"
+         parent="Training_McomWarehouseStockIntegration::warehouse"
+         sortOrder="100"
+         resource="Magento_Backend::content"
+         action="sourcestock/show" />
   </menu>
 </config>
