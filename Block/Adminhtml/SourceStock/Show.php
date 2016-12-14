@@ -14,6 +14,7 @@ class Show extends Template
             return [];
         }
 
+        // return proper values
         return [
             [
                 'source_id' => 'West Coast',
