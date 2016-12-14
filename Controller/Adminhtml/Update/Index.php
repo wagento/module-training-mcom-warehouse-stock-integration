@@ -12,7 +12,7 @@ class Index extends \Magento\Framework\App\Action\Action
      *
      * @see _isAllowed()
      */
-    const ADMIN_RESOURCE = 'Magento_CatalogMessageBus::export';
+    const ADMIN_RESOURCE = 'Magento_Backend::content';
 
     /** @var PageFactory */
     protected $pageFactory;
