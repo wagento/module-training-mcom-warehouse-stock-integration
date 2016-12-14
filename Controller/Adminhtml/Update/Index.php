@@ -47,7 +47,7 @@ class Index extends \Magento\Framework\App\Action\Action
             }
 
             if (!empty($post['sku']) && !empty($post['quantity'])) {
-                $this->publishMessage();
+                $this->publishMessage($post);
                 $this->messageManager->addSuccessMessage(
                     sprintf(
                         'Source stock with quantity %s for SKU %s in source %s sent',
@@ -63,7 +63,10 @@ class Index extends \Magento\Framework\App\Action\Action
         return $page_object;
     }
 
-    private function publishMessage()
+    /**
+     * @param array $params
+     */
+    private function publishMessage(array $params)
     {
         // do your thing
     }
